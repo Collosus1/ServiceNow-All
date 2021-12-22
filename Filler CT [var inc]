@@ -16,5 +16,4 @@ function onChange(control, oldValue, newValue, isLoading) {
         myListCollector.reset();
         myListCollector.setQuery(filterString);
    //Type appropriate comment here, and begin script below
-
 }
