@@ -1,0 +1,16 @@
+function onChange(control, oldValue, newValue, isLoading) {
+   if (isLoading || newValue == '') {
+      return;
+   }
+  //Create variable for the variable you're going to look for 
+	var dfas_domain = g_form.getValue('dfas_domain');
+	var collectorName = 'ct_numbers';
+    // next line denotes what you will be looking for - note : table ^ element looked for ^ value of element
+    var filterString = 'table=u_auditing_task^element=u_ct_number^dependent_value='+newValue;
+
+        var myListCollector = g_list.get(collectorName);
+        myListCollector.reset();
+        myListCollector.setQuery(filterString);
+   //Type appropriate comment here, and begin script below
+   
+}
