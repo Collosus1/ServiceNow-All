@@ -10,7 +10,7 @@ function onChange(control, oldValue, newValue, isLoading) {
 
         var myListCollector = g_list.get(collectorName);
         myListCollector.reset();
-        myListCollector.setQuery(filterString);
+        myListCollector.setQuery(filterString); 
    //Type appropriate comment here, and begin script below
    
 }
