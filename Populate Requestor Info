@@ -1,0 +1,60 @@
+function onChange(control, oldValue, newValue, isLoading) {
+   //edit the fields below. Add the variables you need and ensure you edit the code accordingly. You should have
+   // you should have the same number of variables here as you do in the 'setUserInfo function'
+   var target = 'u_requester';
+   var phone = 'u_requester_phone'; 
+   var email = 'u_requester_email'; 
+   var user_org = 'submitter_s_org_code'; 
+    
+   if (newValue == '') {
+        g_form.clearValue(phone);
+        g_form.clearValue(email);
+		    g_form.clearValue(org);
+        return;
+    }
+
+    var usrID = g_form.getValue(target);
+    //g_form.addErrorMessage("Name ", usrID);
+    //please see commented code at the bottom for GlideAjax required
+    var usrGA = new GlideAjax("CUSTAJAXUtils");
+    usrGA.addParam('sysparm_name', 'getUserInfo');
+    usrGA.addParam('sysparm_usrID', usrID);
+    usrGA.getXML(setUserInfo);
+
+}
+
+function setUserInfo(response) {
+    var answer = response.responseXML.documentElement.getAttribute("answer");
+//the next line is parsing the JSON to get the infomation listed
+    if (answer) {
+        var usrInfo = JSON.parse(answer);
+        g_form.setValue(email, usrInfo.email);
+        g_form.setValue(phone, usrInfo.phone);
+		    g_form.setValue(user_org, usrInfo.department);
+    }
+
+}
+/*
+The following code is a script include and must be in place before the client script above will work
+
+var CUSTAJAXUtils = Class.create();
+CUSTAJAXUtils.prototype = Object.extendsObject(AbstractAjaxProcessor, {
+	
+	getUserInfo: function(){
+		var usrID = this.getParameter('sysparm_usrID');
+		var usrInfo = {};
+		var usrGR = new GlideRecord('sys_user');
+		usrGR.addQuery('sys_id', usrID);
+		usrGR.query();
+		if (usrGR.next()){
+			usrInfo.email = usrGR.email.toString();
+			usrInfo.phone = usrGR.phone.toString();
+			usrInfo.department = usrGR.department.toString();
+		}
+		return JSON.stringify(usrInfo);
+		
+	},
+
+    type: 'CUSTAJAXUtils'
+});
+*/
