@@ -1,0 +1,13 @@
+function onChange(control, oldValue, newValue, isLoading) {
+   if (isLoading || newValue == '') {
+      return;
+   }
+   //edit variables below
+var field1 = [insert your field name here]
+var message1 = [insert your message if incorrect]
+//do not edit below this line
+var targetField = g_form.getValue(field1);
+	if (targetField.includes('$')==false){
+		g_form.showFieldMsg(field1, message1, "error");
+	}
+}
