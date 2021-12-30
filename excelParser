@@ -15,11 +15,10 @@ var header5 = headers[4];
 var header6 = headers[5];*/
 
 //print headers 
-gs.print(header1 + " " + header2)
+gs.print(header1 + " " + header2);
 
 while (parser.next()) {
   var row = parser.getRow();
   //print row value for both getColumnHeaders
-  gs.print) row {
-  hesder1] + ' ' + row[header2])
+  gs.print(row[header1] + ' ' + row[header2]);
 }
