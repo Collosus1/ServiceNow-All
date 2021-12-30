@@ -1,0 +1,25 @@
+var parser = new sn_impex.GlideExcelParser();
+var attachment = new GlideSysAttachment();
+// use attacement sys ID of the excel file 
+var attachmentStream = attachment.getContentStream( /*insert attachment SysID*/ );
+
+parser.parse(attachmentStream); //instructing to parse
+
+//retrieve column headers
+var headers = parser.getColumnHeaders();
+var header1 = headers[0];
+var header2 = headers[1];
+/*var header3 = headers[2];
+var header4 = headers[3];
+var header5 = headers[4];
+var header6 = headers[5];*/
+
+//print headers 
+gs.print(header1 + " " + header2)
+
+while (parser.next()) {
+  var row = parser.getRow();
+  //print row value for both getColumnHeaders
+  gs.print) row {
+  hesder1] + ' ' + row[header2])
+}
