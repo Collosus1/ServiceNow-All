@@ -1,0 +1,30 @@
+//client script
+//====================================
+
+function onChange(control, oldValue, newValue, isLoading) {
+   if (isLoading || newValue == '') {
+      return;
+   }
+
+var primary = g_form.getValue('primary_function');
+var secondary = g_form.getValue('secondary_function');
+var ga = new GlideAjax('u_getUitDecision'); //this is the script include
+	
+ga.addParam("sysparm_name", "getDecision"); //this is the function within the script include
+ga.addParam("sysparm_primary", primary);
+ga.addParam("sysparm_secondary", secondary);
+ga.getXML(getResponse);
+
+
+function getResponse(response) {
+    //set u_department_head sys_id to variable data
+    var data = response.responseXML.documentElement.getAttribute('answer'); 
+var test = 'hello';
+    alert(data);
+	//var oldValue = g_form.getValue('target_variable');
+	
+	g_form.setValue('target_variable',data);
+}
+   //Type appropriate comment here, and begin script below
+   
+}
