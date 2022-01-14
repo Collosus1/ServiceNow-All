@@ -1,0 +1,28 @@
+//script include
+//====================================
+// create class
+var u_getUitDecision = Class.create();
+u_getUitDecision.prototype = Object.extendsObject(AbstractAjaxProcessor, {
+	
+	//function name
+	getDecision: function (){
+		
+		// search parameter for query
+		var primary = this.getParameter('sysparm_primary');
+        var secondary = this.getParameter('sysparm_secondary');
+	
+		//query
+		var gr = new GlideRecord('sys_choice');
+		gr.addQuery('table', 'sc_req_item');
+       gr.addQuery('element', 'u_uit_decision_01');
+       gr.addQuery('label', primary);
+		gr.addQuery('value', secondary);
+        //gr.addQuery('value', secondary);
+		gr.query();
+		if (gr.next()) {
+			//return data
+			return gr.dependent_value;
+		}
+	}
+
+});
