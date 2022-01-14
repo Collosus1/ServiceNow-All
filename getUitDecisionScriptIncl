@@ -1,0 +1,45 @@
+//script include
+//====================================
+// create class
+var u_getUitDecision = Class.create();
+u_getDepartmentHead.prototype = Object.extendsObject(AbstractAjaxProcessor, {
+	
+	//function name
+	getDecision function (){
+		
+		// search parameter for query
+		var primary = this.getParameter('sysparm_primary');
+    var secondary = this.getParameter('sysparm_secondary');
+	
+		//query
+		var gr = new GlideRecord('sys_choice');
+		gr.addQuery('table', sc_req_item);
+    gr.addQuery('element', u_uit_decision_01);
+    gr.addQuery('label', primary);
+    gr.addQuery('value', secondary);
+		gr.query();
+		if (gr.next()) {
+			//return data
+			return gr.dependent_value;
+		}
+	}
+
+});
+
+//client script
+//====================================
+var department = g_form.getvalue('u')
+
+var u_getUitDecision = Class.create();
+var ga = new GlideAjax(''); //this is the script include
+ga.addParam("sysparm_name", "getContact"); //this is the function within the script include
+ga.addParam("sysparm_department", department);
+ga.getXML(getResponse);
+
+
+function getResponse(response) {
+    //set u_department_head sys_id to variable data
+    var data = response.responseXML.documentElement.getAttribute('answer'); 
+
+    g_form.setValue("man", data);
+}
