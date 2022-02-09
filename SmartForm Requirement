@@ -1,0 +1,82 @@
+Power BI Tracking Request 
+•	Create request for users to send license request in through MyIT 
+
+•	Allow Users to pick Premium or Pro License (in drop down) 
+Verify only users approved can select the license type.  This is the data call Jim McNutt sent out.  We should have it back by the beginning of March – we can load the list of users once we have the listing back from Site CoS (Power BI Pro only) 
+•	Once request is kicked off send over to Josh Worch (or Group Box) to work request and send back confirmation letting user know request was processed
+Confirmation should provide MS 365 link and say up to 24-48 hours 
+Note: If we can automate this request and kick off connection through DEPO to process we need to explore opportunities (contact Gabby first) 
+•	Need to be able to pull report showing how many users have access and who has access 
+
+DEPO DISA POC: Gabby 
+Aguirre, Gabriela C CTR (USA) gabriela.c.aguirre.ctr@mail.mil  
+ 
+ ---------------------------------------------------------------------------
+ SmartForm Request below: : : 
+ I went over the form again today with Ken. On the list of “Reason for Request” can you please change the following?:
+
+Financial to Financial/Cost Savings
+Operations Business Model to Operations Business Model/Metrics
+
+ New/Enhancement
+
+1.       When selecting form, add pop up: Use this form to request a new SmartForm or an enhancement/SCR to an existing SmartForm.  DO NOT use this form if your SmartForm is not working according to the original requirements.  In that scenario, select the form titled “SmartForm (Issues/PTR)”.
+
+a.       Also add this language to the top of the form
+
+2.       Will “Org Code” auto-populate?
+
+3.       “Request Type” not always populating “New” or “Other”
+
+4.       Change “Give us a description of your current form” and “Describe the problem(s) you experience with your current form” to include “/process” at the end
+
+5.       Make the following fields mandatory: Give us a description of your current form/process, Describe the problem(s) you experience with your current form/process, Describe your ideal solution, Title of form
+
+6.       For suggestion text in “Describe your ideal solution”, please use following: validation rules, question prompts, incorporate AskDFAS
+
+7.       When user checkmarks “Financial”, please have additional question prompt read: “Because you chose: Financial”
+
+8.       For “Estimated Savings” after user checkmarks “Financial”, add help text that says: Do not use dollar sign, do not use commas, INCLUDE two decimals, example—1000.00
+
+9.       Change “What does your area plan to do with the time/financial savings?” to “What does your area plan to do with the financial savings?” (Delete “time/”)
+
+a.       In the “What’s this?” section, delete sentence for time savings
+
+10.   Add checkmark for “Time Savings”
+
+a.       Add “Because you chose: Time Savings”
+
+b.       Question 1:  Estimate the number of hours in a year that will be saved with implementing solution
+
+c.       Question 2: Please explain how you arrived at your time savings estimation
+
+d.       Question 3: Due to the estimated time savings, what other initiatives/ tasks will your area be able to spend more time accomplishing?
+
+11.   When “New” is selected, “Describe the Current Process” and “Define the problem(s) with current process” appearing a second time at the bottom.  These should not appear at bottom. 
+
+12.   For “Title of Form”, add “(Use form number followed by form name if applicable)” to field
+
+13.   When a request has been approved for development, e-mail should say: This request has been approved for development.  Leveraging Technology is currently assessing developer availability and project prioritization.  Leveraging Technology will reach out to requester once an estimated start date has been established. 
+
+14.   When choosing “Other” for Request Type, do the following, remove “Explanation” pop up question
+
+ 
+
+ 
+
+ 
+
+ 
+
+PTR/Issues
+
+1.       For Smartform (Issues/PTR), change third sentence of pop-up to read as follows: DO NOT use this form if you are requesting a new Smartform or an enhancement to a Smartform.  In that scenario, select the form titled “Smartform (New/Enhancement)”.
+
+a.       At the top of the form, include the following language: Use this form when your SmartForm is not functioning according to the original requirements.  DO NOT use this form if you are requesting a new Smartform or an enhancement to a Smartform.  In that scenario, select the form titled “Smartform (New/Enhancement)”.
+
+2.       For “Title of Form”, add “(Use form number followed by form name if applicable)” to field
+
+ 
+
+ 
+
