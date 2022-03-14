@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2021-08-31 14:03:54">
+<sys_script_email action="INSERT_OR_UPDATE">
+<name>ucsdRITMdetails</name>
+<new_lines_to_html>false</new_lines_to_html>
+<script><![CDATA[(function runMailScript(current, template, email, email_action, event) {
+
+    
+	var item = new GlideRecord("sc_req_item");
+	item.addQuery("sys_id", current.sys_id.toString());
+	item.query();
+	if(item.next()) {
+		template.print("<div><b>" + item.cat_item.getDisplayValue() + "</b></div>");
+		template.print("<div>&nbsp;</div>");
+		template.print("<div>Details:</div>");
+		template.print("<div>&nbsp;</div>");
+		template.print('<table style="border-color: #000000; border-collapse: collapse; width: 100%;" border="1" cellpadding="15"><tbody>');
+
+		var set = new GlideappVariablePoolQuestionSet();
+		set.setRequestID(item.sys_id.toString());
+		set.load();
+		var vs = set.getFlatQuestions();
+		for (var i=0; i < vs.size(); i++) {
+			//gs.log("MKING:EmailScript:ucsdRITMdetails:name of variable: " + vs.get(i).getName());
+			
+			if(vs.get(i).getLabel() != '' && vs.get(i).getDisplayValue() != '' && vs.get(i).getName() != 'w_telecommuting_employees' && vs.get(i).getName() != 'u_phi_information') {
+				
+				var question = vs.get(i).getLabel();
+				var answer = vs.get(i).getDisplayValue();
+				var displayAnswer = vs.get(i).getDisplayValue();
+				if (answer == 'true'){
+					displayAnswer = "Yes";
+				}
+				if (answer == 'false'){
+					displayAnswer = "No";
+				}
+				template.print('<tr>');
+				template.print('<td style="width: 50%">' +  question + '</td><td style="width: 50%">' + displayAnswer + "</td>");
+				template.print("</tr>");
+			}
+			
+		}
+	}
+	template.print("</tbody>");
+	template.print("</table>");
+
+
+
+})(current, template, email, email_action, event);]]></script>
+<sys_class_name>sys_script_email</sys_class_name>
+<sys_created_by>c4king@ucsd.edu</sys_created_by>
+<sys_created_on>2020-07-10 16:50:36</sys_created_on>
+<sys_customer_update>false</sys_customer_update>
+<sys_id>9ddf2e6bdbf114500100fcfaae96190f</sys_id>
+<sys_mod_count>10</sys_mod_count>
+<sys_name>ucsdRITMdetails</sys_name>
+<sys_package display_value="Global" source="global">global</sys_package>
+<sys_policy/>
+<sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+<sys_scope display_value="Global">global</sys_scope>
+<sys_update_name>sys_script_email_9ddf2e6bdbf114500100fcfaae96190f</sys_update_name>
+<sys_updated_by>c4king@ucsd.edu</sys_updated_by>
+<sys_updated_on>2021-08-12 19:11:53</sys_updated_on>
+</sys_script_email>
+</unload>
