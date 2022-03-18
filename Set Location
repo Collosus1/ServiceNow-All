@@ -1,0 +1,24 @@
+function onChange(control, oldValue, newValue, isLoading) {  
+	    if (newValue == '') {  
+	          return;  
+	    }  
+	         
+	var user_ref = g_form.getReference('caller', loadInfo);  
+	 
+	function loadInfo(user_ref) {  
+	     
+	var gp = new GlideRecord('cmn_location');  
+	      gp.addQuery('sys_id', user_ref.location);  
+	        gp.query(function(gp){  
+	  if(gp.next())   {  
+	      var locname = gp.name;  
+           
+	              g_form.setValue('location',gp.sys_id); //Use sys_id, since you are setting a reference field to location
+	          }  
+	  });    
+}} 
+
+
+
+
+
