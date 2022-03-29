@@ -1,0 +1,35 @@
+/*
+**Access Flow/Action data using the fd_data object. Script must return a value.
+**example: var shortDesc = fd_data.trigger.current.short_description;
+**return shortDesc;
+*/
+    var submittersDfasSite = fd_data._1__get_catalog_variables.cos_office;
+    //
+    if (submittersDfasSite == 'cleveland') {
+        return '4616a4a71b1b709068f92f82f54bcb2a'; // bot_sc_Bot Intake Cleveland
+    } else if (submittersDfasSite == 'columbus') {
+        return '71e520671b1b709068f92f82f54bcb49'; // bot_sc_Bot Intake Columbus
+    } else if (submittersDfasSite == 'ess') {
+        return '96b25a311b2b7c90e668eb1de54bcb33'; // bot_sc_Bot Intake ESS
+    } else if (submittersDfasSite == 'europe') {
+        return '6c92d6311b2b7c90e668eb1de54bcb1c'; // bot_sc_Bot Intake Europe
+    } else if (submittersDfasSite == 'indianapolis') {
+        return '9575ac671b1b709068f92f82f54bcb97'; // bot_sc_Bot Intake Indy
+    } else if (submittersDfasSite == 'internal_review') {
+        return '2cc873cc1bf40d5068f92f82f54bcbf8'; // bot_sc_Bot Intake Internal Review
+    } else if (submittersDfasSite == 'it') {
+        return '05fc6ae71be5c510e668eb1de54bcbd2'; // IT
+    } else if (submittersDfasSite == 'japan') {
+        return 'ce1212fd1be77c90e668eb1de54bcb95'; // bot_sc_Bot Intake Japan
+    } else if (submittersDfasSite == 'limestone') {
+        return '3bc1963d1be77c90e668eb1de54bcb15'; // bot_sc_Bot Intake Limestone
+    } else if (submittersDfasSite == 'ogc') {
+        return '100977cc1bf40d5068f92f82f54bcbb6'; // bot_sc_Bot Intake Office of General Council
+    } else if (submittersDfasSite == 'rome') {
+        return 'cd0030b91ba37c90e668eb1de54bcb09'; // bot_sc_Bot Intake Rome
+    } else if (submittersDfasSite == 'strategy_and_support') {
+        return '70393bcc1bf40d5068f92f82f54bcbaa'; // bot_sc_Bot Intake Strategy and Support
+     } else if (submittersDfasSite == 'texarkana') {
+        return '8ef1d2fd1be77c90e668eb1de54bcb1b'; // bot_sc_Bot Intake Texarkana       
+    }
+
