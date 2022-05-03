@@ -1,0 +1,119 @@
+(function runTransformScript(source, map, log, target /*undefined onStart*/ ) {
+
+
+// Create the new sc_req_item through the cart (order the item)
+
+var cartId = GlideGuid.generate(null);
+
+var cart = new Cart(cartId);
+
+// identify the catalog item sys_id you want to "order" 
+
+var item = cart.addItem('92ef34bc1beb7890e668eb1de54bcbc4');
+
+	if(action =="insert"){
+    ignore = true;
+}
+
+// Add the individual variables and the value of the variable for the request;
+cart.setVariable(item,'additional_comments',source.u_additional_comments);
+cart.setVariable(item,'avgtm_spent_rating',source.u_avgtm_spent_rating);
+cart.setVariable(item,'avgtm_spent_wtfactor',source.u_avgtm_spent_wtfactor);
+cart.setVariable(item,'bcb_approved_date',source.u_bcb_approveddt);
+cart.setVariable(item,'bcb_priority2',source.u_bcb_priority);
+cart.setVariable(item,'bot_executers',source.u_bot_executers);
+cart.setVariable(item,'bot_programmer',source.u_bot_programmer);
+cart.setVariable(item,'bot_status',source.u_bot_status);
+cart.setVariable(item,'combined_total',source.u_combined_total);
+cart.setVariable(item,'combined_ttl_rank',source.u_combined_ttl_rank);
+cart.setVariable(item,'combined_weighted_rank',source.u_combined_weighted_rank);
+cart.setVariable(item,'combined_wtfactor_ttl',source.u_combined_wtfactor_ttl);
+cart.setVariable(item,'control_rating',source.u_control_rating);
+cart.setVariable(item,'control_wtfactor',source.u_control_wtfactor);
+cart.setVariable(item,'cycletm_red_wtfactor',source.u_cycletm_red_wtfactor);
+cart.setVariable(item,'cycletm_singe_case_rating',source.u_cycletm_singe_case_rating);
+cart.setVariable(item,'cycletm_single_case_wtfactor',source.u_cycletm_sing_case__wtfactor);
+cart.setVariable(item,'cycletmred_rating',source.u_cycletmred_rating);
+cart.setVariable(item,'data_restriction_rating',source.u_data_restriction_rating);
+cart.setVariable(item,'data_restriction_wtfactor',source.u_data_restriction_wtfactor);
+cart.setVariable(item,'does_the_data_have_pii',source.u_does_the_data_have_pii);
+cart.setVariable(item,'does_the_process_require_exception_handling',source.u_does_the_pro_ption_handling);
+cart.setVariable(item,'ess_use_case_representative',source.u_ess_use_case_rep);
+cart.setVariable(item,'exception_handling_rating',source.u_exception_handling_rating);
+cart.setVariable(item,'exceptionhandling_wtfactor',source.u_exceptionhandling_wtfactor);
+cart.setVariable(item,'fte_rating',source.u_fte_rating);
+cart.setVariable(item,'fy',source.u_fy);
+cart.setVariable(item,'how_frequently_is_the_process_executed',source.u_how_frequent_ocess_executed);
+cart.setVariable(item,'how_important_is_it_to_control_this_process',source.u_how_importan_l_this_process);
+cart.setVariable(item,'how_repetitive_is_this_process',source.u_how_repetiti_s_this_process);
+cart.setVariable(item,'how_stable_is_the_process',source.u_how_stable_is_the_process);
+cart.setVariable(item,'how_stable_is_the_system_environment_main',source.u_how_stable_i_em_environment);
+cart.setVariable(item,'human_error_rating',source.u_human_error_rating);
+cart.setVariable(item,'human_factor_wtfactor',source.u_human_factor_wtfactor);
+cart.setVariable(item,'lt_pmo',source.u_lt_pmo);
+cart.setVariable(item,'number_of_minutes_it_currently_averages_for_one_complete_cycle_of_the_process',source.u_number_of_mi_of_the_process);
+cart.setVariable(item,'operational_capabilities',source.u_operational_capabilities);
+cart.setVariable(item,'process_docs_rating',source.u_process_docs_rating);
+cart.setVariable(item,'process_docs_wtfactor',source.u_process_docs_wtfactor);
+cart.setVariable(item,'repetative_rating',source.u_repetative_rating);
+cart.setVariable(item,'repetative_wtfactor',source.u_repetative_wtfactor);
+cart.setVariable(item,'rule_based_rating',source.u_rule_based_rating);
+cart.setVariable(item,'rule_based_wtfactor',source.u_rule_based_wtfactor);
+cart.setVariable(item,'simplicity_wtfactor',source.u_simplicity_wtfactor);
+cart.setVariable(item,'simplicity_wtfactor_ttl',source.u_simplicity_wtfactor_ttl);
+cart.setVariable(item,'stability_rating',source.u_stability_rating);
+cart.setVariable(item,'stability_wtfactor',source.u_stability_wtfactor);
+cart.setVariable(item,'structured_data_rating',source.u_structured_data_rating);
+cart.setVariable(item,'structured_data_wtfactor',source.u_structured_data_wtfactor);
+cart.setVariable(item,'suitability_wtfactor',source.u_suitability_wtfactor);
+cart.setVariable(item,'suitability_wtfactor_ttl',source.u_suitability_wtfactor_ttl);
+cart.setVariable(item,'sys_stability_rating',source.u_sys_stability_rating);
+cart.setVariable(item,'sys_stability_wtfactor',source.u_sys_stability_wtfactor);
+cart.setVariable(item,'sysrestriction_wtfactor',source.u_sysrestriction_wtfactor);
+cart.setVariable(item,'sysrestrictions_rating',source.u_sysrestrictions_rating);
+cart.setVariable(item,'tactical_priority',source.u_tactical_priority);
+cart.setVariable(item,'u_requester_mission_area',source.u_mission_area);
+cart.setVariable(item,'use_case_memo',source.u_use_case_memo);
+cart.setVariable(item,'use_case_sent_to_lt_date',source.u_uc_sent_to_lt_dt);
+cart.setVariable(item,'use_case_status',source.u_use_case__uc__status);
+cart.setVariable(item,'value_wtfactor',source.u_value_wtfactor);
+cart.setVariable(item,'value_wtfactor_ttl',source.u_value_wtfactor_ttl);
+cart.setVariable(item,'will_this_automation_improve_cycle_time',source.u_will_this_au_ove_cycle_time);
+cart.setVariable(item,'will_this_automation_reduce_human_errors',source.u_will_this_au_e_human_errors);
+cart.setVariable(item,'fte_wtfactor',source.u_fte_wtfactor);
+cart.setVariable(item,'locations_rating',source.u_locations_rating);
+cart.setVariable(item,'locations_rating2',source.u_locations_rating2);
+cart.setVariable(item,'locations_wtfactor',source.u_locations_wtfactor);
+cart.setVariable(item,'locations_wtfactor2',source.u_locations_wtfactor2);
+cart.setVariable(item,'sysaccess_wtfactor',source.u_sysaccess_wtfactor);
+cart.setVariable(item,'sysaccessed_rating',source.u_sysaccessed_rating);
+cart.setVariable(item,'are_there_system_restrictions_main',source.u_are_there_sy_m_restrictions);
+cart.setVariable(item,'how_many_locations_execute_this_process',source.u_at_how_many__cess_performed);
+cart.setVariable(item,'u_requester',source.u_created_by);
+cart.setVariable(item,'describe_expected_results',source.u_describe_you_n_more_detail_);
+cart.setVariable(item,'submitter_s_dfas_site',source.u_dfas_site_location);
+cart.setVariable(item,'do_data_flow_and_architecture_diagrams_exist',source.u_do_data_flow_iapgrams_exist);
+cart.setVariable(item,'date_projected_completed',source.u_dt_projected_cmplt);
+cart.setVariable(item,'how_many_fte_are_currently_supporting_this_process',source.u_how_many_fte_n_this_process);
+cart.setVariable(item,'how_structured_is_the_data',source.u_how_structured_is_the_data);
+cart.setVariable(item,'in_sustainment_date',source.u_in_sustainment_dt);
+cart.setVariable(item,'initial_release_date',source.u_initial_release_dt);
+cart.setVariable(item,'is_the_process_rule_based',source.u_is_the_process_rule_based);
+cart.setVariable(item,'lt_development_completed_date',source.u_lt_dev_comp_dt);
+cart.setVariable(item,'lt_development_start_date',source.u_lt_dev_startdt);
+cart.setVariable(item,'how_many_applications_systems_must_be_accessed_to_execute_the_process',source.u_number_of_ap_te_the_process);
+cart.setVariable(item,'u_submitters_org_code',source.u_office_symbol);
+cart.setVariable(item,'process_owner',source.u_process_owner_s_name);
+cart.setVariable(item,'process_owner_title_role',source.u_process_owner_s_title_role);
+cart.setVariable(item,'projected_development_start_date',source.u_projdevstartdt);
+cart.setVariable(item,'project_sustainment_date',source.u_projsustainmentdt);
+cart.setVariable(item,'projected_user_validation_date',source.u_projuservalidationdt);
+cart.setVariable(item,'process_name_100_characters_max',source.u_title_of_rpa_proposal);
+cart.setVariable(item,'use_case_approved_date',source.u_uc_approved_dt);
+cart.setVariable(item,'user_validation_Date',source.u_uservalidationdt);
+
+
+
+var rc = cart.placeOrder();
+
+})(source, map, log, target);
