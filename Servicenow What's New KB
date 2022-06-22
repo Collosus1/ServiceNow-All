@@ -1,0 +1,125 @@
+<p></p>
+<style>
+ tbody, table th, table td {
+    border-top: none;
+ }
+ .table{
+ 	text-align:center;
+  width:100%;
+  height:25%;
+  border-collapse: collapse;
+ }
+	.table-column{
+ 	width:20%;
+  height:20%;
+  display:inline-block;
+  text-align:center;
+  text-decoration:none;
+  color:black;
+  font-size:16px;
+ }
+ .table-column:hover{
+ 	color:black;
+   text-decoration:underline;
+ }
+ .image{
+ 	width:80%;
+  max-width=150px
+  height:80%;
+  border-radius:10%;
+  margin-right:10%;
+  margin-left:10%
+ }
+</style>
+<h1 style="text-align: center; font-size: 30px; color: green;">What's new in MyIT?</h1>
+<p style="text-align: center; font-size: 18px; color: green;">Explore New Catalog Requests</p>
+<table class="table" border="0">
+<thead></thead>
+<!--<td class="table-column"><a href="LINK TO ITEM GERE" rel="nofollow"><img class="image" src="IMAGE FILE NAME HERE" alt="ALT TEXT" />LINK TEXT HERE</a></td>-->
+<tbody style="border-top: none;">
+<tr>
+<td class="table-column">
+<a href="https://dfasdev.servicenowservices.com/myit_sp?id=sc_cat_item&amp;sys_id=f3a745e81b35c910e668eb1de54bcbea" rel="nofollow">
+<img class="image" alt="" src="Robot_Standing.jpg">
+AI Request
+</a>
+</td>
+<td class="table-column"><a href="https://dfasdev.servicenowservices.com/myit_sp?id=sc_cat_item&amp;sys_id=179a45761bbd415068f92f82f54bcb9a" rel="nofollow"><img class="image" src="Robot_Standing.jpg" alt="" />AI Consultation</a></td>
+<td class="table-column"><a href="https://dfasdev.servicenowservices.com/myit_sp?id=sc_cat_item&amp;sys_id=eca56e181b97c950e668eb1de54bcb1d" rel="nofollow"><img class="image" src="Robot_Close.jpg" alt="" />MyIT Consultation</a></td>
+<!--<td class="table-column"><a href="https://dfasdev.servicenowservices.com/myit_sp?id=sc_cat_item&amp;sys_id=26eccab51bde811068f92f82f54bcbda" rel="nofollow"><img class="image" src="Person_Stars.jpg" alt="" />Customer Experience Assessment</a></td>-->
+<td class="table-column"><a href="https://dfasdev.servicenowservices.com/myit_sp?id=sc_cat_item&amp;sys_id=6b8272e41b7dc910e668eb1de54bcb97" rel="nofollow"><img class="image" src="Crown_Screen.jpg" alt="" />Power BI Pro Account Request</a></td>
+<p></p>
+<style>
+ tbody, table th, table td {
+    border-top: none;
+ }
+ .table{
+ 	text-align:center;
+  width:100%;
+  height:25%;
+  border-collapse: collapse;
+ }
+	.table-column{
+ 	width:20%;
+  height:20%;
+  display:inline-block;
+  text-align:center;
+  text-decoration:none;
+  color:black;
+  font-size:16px;
+ }
+ .table-column:hover{
+ 	color:black;
+   text-decoration:underline;
+ }
+ .image{
+ 	width:80%;
+  max-width=150px
+  height:80%;
+  border-radius:10%;
+  margin-right:10%;
+  margin-left:10%
+ }
+</style>
+<h1 style="text-align: center; font-size: 30px; color: green;">What's new in MyIT?</h1>
+<p style="text-align: center; font-size: 18px; color: green;">Explore New Catalog Requests</p>
+<table class="table" border="0">
+<thead></thead>
+<!--<td class="table-column"><a href="LINK TO ITEM GERE" rel="nofollow"><img class="image" src="IMAGE FILE NAME HERE" alt="ALT TEXT" />LINK TEXT HERE</a></td>-->
+<tbody style="border-top: none;">
+<tr>
+<td class="table-column">
+<a href="https://dfasdev.servicenowservices.com/myit_sp?id=sc_cat_item&amp;sys_id=f3a745e81b35c910e668eb1de54bcbea" rel="nofollow">
+<img class="image" alt="" src="Robot_Standing.jpg">
+AI Request
+</a>
+</td>
+<td class="table-column"><a href="https://dfasdev.servicenowservices.com/myit_sp?id=sc_cat_item&amp;sys_id=179a45761bbd415068f92f82f54bcb9a" rel="nofollow"><img class="image" src="Robot_Standing.jpg" alt="" />AI Consultation</a></td>
+<td class="table-column"><a href="https://dfasdev.servicenowservices.com/myit_sp?id=sc_cat_item&amp;sys_id=eca56e181b97c950e668eb1de54bcb1d" rel="nofollow"><img class="image" src="Robot_Close.jpg" alt="" />MyIT Consultation</a></td>
+<!--<td class="table-column"><a href="https://dfasdev.servicenowservices.com/myit_sp?id=sc_cat_item&amp;sys_id=26eccab51bde811068f92f82f54bcbda" rel="nofollow"><img class="image" src="Person_Stars.jpg" alt="" />Customer Experience Assessment</a></td>-->
+<td class="table-column"><a href="https://dfasdev.servicenowservices.com/myit_sp?id=sc_cat_item&amp;sys_id=6b8272e41b7dc910e668eb1de54bcb97" rel="nofollow"><img class="image" src="Crown_Screen.jpg" alt="" />Power BI Pro Account Request</a></td>
+<!--<td class="table-column"><a href="/myit_sp?id=sc_cat_item&sys_id=0ae99cee1bafb89068f92f82f54bcb9f" rel="nofollow"><img class="image" src="IMAGE FILE NAME HERE" alt="ALT TEXT" />Mobile Device Request</a></td>-->
+</tr>
+</tbody>
+</table>
+<p style="text-align: center; font-size: 18px; color: green;">Explore New Knowledge Articles and SN Videos</p>
+<table class="table" border="0">
+<tbody>
+<tr>
+<td class="table-column"><a href="https://dfasdev.servicenowservices.com/myit_sp?id=kb_article_view&amp;sys_kb_id=b8dc0cc71b53419068f92f82f54bcb62" rel="nofollow"><img class="image" src="Settings.jpg" alt="" />Infrastructure and System Support</a></td>
+<td class="table-column"><a href="https://www.milsuite.mil/video/watch/video/52799" rel="nofollow"><img class="image" src="Cloud.jpg" alt="" />Architecture and Cloud Attributes</a></td>
+</tr>
+</tbody>
+</table>
+</tr>
+</tbody>
+</table>
+<p style="text-align: center; font-size: 18px; color: green;">Explore New Knowledge Articles and SN Videos</p>
+<table class="table" border="0">
+<tbody>
+<tr>
+<td class="table-column"><a href="https://dfasdev.servicenowservices.com/myit_sp?id=kb_article_view&amp;sys_kb_id=b8dc0cc71b53419068f92f82f54bcb62" rel="nofollow"><img class="image" src="Settings.jpg" alt="" />Infrastructure and System Support</a></td>
+<td class="table-column"><a href="https://www.milsuite.mil/video/watch/video/52799" rel="nofollow"><img class="image" src="Cloud.jpg" alt="" />Architecture and Cloud Attributes</a></td>
+</tr>
+</tbody>
+</table>
